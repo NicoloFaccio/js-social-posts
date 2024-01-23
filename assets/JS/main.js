@@ -73,7 +73,9 @@ const posts = [
     }
 ];
 
-const constainerHtml = document.getElementById("container")
+const constainerHtml = document.getElementById("container");
+
+let button = document.getElementById("buttonLikes");
 
 for (let i = 0; i < posts.length; i++) {
     let arrayPosts = posts[i]
@@ -101,7 +103,7 @@ for (let i = 0; i < posts.length; i++) {
         <div class="post__footer">
             <div class="likes js-likes">
                 <div class="likes__cta">
-                    <a class="like-button  js-like-button" href="#" data-postid="1">
+                    <a class="like-button  js-like-button" href="#" data-postid="1" id="buttonLikes">
                         <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
                         <span class="like-button__label">Mi Piace</span>
                     </a>
@@ -113,4 +115,8 @@ for (let i = 0; i < posts.length; i++) {
         </div>            
     </div>
  `
-}
+};
+
+button.addEventListener("click", function(){
+
+});
