@@ -75,7 +75,7 @@ const posts = [
 
 const constainerHtml = document.getElementById("container");
 
-let button = document.getElementById("buttonLikes");
+
 
 for (let i = 0; i < posts.length; i++) {
     let arrayPosts = posts[i]
@@ -114,9 +114,14 @@ for (let i = 0; i < posts.length; i++) {
             </div> 
         </div>            
     </div>
- `
-};
+`
+
+let button = document.getElementById("buttonLikes");
 
 button.addEventListener("click", function(){
-
+    console.log(posts[0].likes = 80 + 1)
+    button.classList.add("like-button--liked")
 });
+
+};
+
