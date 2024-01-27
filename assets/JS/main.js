@@ -125,6 +125,16 @@ button.forEach( (element, index) => {
         e.preventDefault()
 
         element.classList.toggle("like-button--liked")
+
+        if (element.classList.contains("like-button--liked")){
+            posts[index].likes++
+
+            counterHtml[index].innerHTML =  posts[index].likes
+        } else {
+            posts[index].likes--
+
+            counterHtml[index].innerHTML =  posts[index].likes 
+        }
     });
 })
 
